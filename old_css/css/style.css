@@ -1,0 +1,5499 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blinker-Regular";
+  src: url("../fonts/Blinker-Regular.woff") format("woff"), url("../fonts/Blinker-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blinker-Light";
+  src: url("../fonts/Blinker-Light.woff") format("woff"), url("../fonts/Blinker-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blinker-Bold";
+  src: url("../fonts/Blinker-Bold.woff") format("woff"), url("../fonts/Blinker-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1030px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pages__numbers,
+.pages__arrowa,
+.footer__item:last-child,
+.footer__logo-text,
+.item-inherit__descr,
+.item-inherit__perk-descr,
+.item-inherit__list-item,
+.item-inherit__category-name,
+.item-inherit__ingred,
+.item-inherit__recept-item span,
+.registration__subtext,
+.registration__forgot,
+.comment__messeg {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.registration__input::-moz-placeholder, .comment__text::-moz-placeholder {
+  font-family: "Montserrat-Light", sans-serif;
+  font-weight: 300;
+}
+
+.registration__input:-ms-input-placeholder, .comment__text:-ms-input-placeholder {
+  font-family: "Montserrat-Light", sans-serif;
+  font-weight: 300;
+}
+
+.registration__input::placeholder,
+.comment__text::placeholder {
+  font-family: "Montserrat-Light", sans-serif;
+  font-weight: 300;
+}
+
+.header,
+.header__account-item,
+.database__input,
+.table__link,
+.Tablecraft__link,
+.item-inherit_hed,
+.item-inherit__stat,
+.item-inherit__name,
+.registration__label,
+.registration__btn,
+.registration__errors,
+.registration__sended,
+.comment__title,
+.comment__btn,
+.comment__name,
+.comment__reg-link {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.database-links__last,
+.craft-links__last,
+.database__adress span,
+.database__adress span a,
+.table__item,
+.Tablecraft__link,
+.Tablecraft__item,
+.TableDataAbilities__stat,
+.TableDataCreatures__name,
+.TableDataCreatures__subtitle,
+.TableDataCreatures__text,
+.TableDataFurnitur__rows,
+.TableDataFurnitur__item,
+.TableDataPerks__rows,
+.TableDataPerks__item,
+.TableDataQuests__rows,
+.TableDataQuests__item,
+.TableDataLore__rows,
+.TableDataLore__item,
+.Abilities__text,
+.Abilities__box,
+.Abilities-weapon__stat,
+.Abilities-weapon__descr,
+#includedContent .Abilities-weapon__points,
+#includedContent2 .Abilities-weapon__points,
+#includedContent3 .Abilities-weapon__points,
+#includedContent4 .Abilities-weapon__points,
+.build-stat__calc a,
+.build-stat__stuf-decrs,
+.form-descr__check-text,
+.form-descr__main-descr,
+.form-descr__copy-text,
+.text-redact__area,
+.popup__text {
+  font-family: "Blinker-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.form-descr__name::-moz-placeholder, .popup__item::-moz-placeholder, .popup__textarea::-moz-placeholder {
+  font-family: "Blinker-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.form-descr__name:-ms-input-placeholder, .popup__item:-ms-input-placeholder, .popup__textarea:-ms-input-placeholder {
+  font-family: "Blinker-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.nav__logo span,
+.TableDataAbilities__stat:nth-child(2),
+.TableDataCreatures__title,
+.eror,
+.Abilities__weapon-slot,
+.Abilities__title,
+.Abilities__subtitle,
+.Abilities-weapon__title,
+.Abilities-weapon__subtitle,
+.Abilities-weapon__name,
+.Abilities-weapon__name-rus,
+#includedContent .Abilities-weapon a,
+#includedContent2 .Abilities-weapon a,
+#includedContent3 .Abilities-weapon a,
+#includedContent4 .Abilities-weapon a,
+.build-stat__this-stat,
+.build-stat__text,
+.build-stat__ico,
+.build-stat__drop-stat,
+.build-stat__down,
+.form-descr__name::placeholder,
+.form-descr__placeholder,
+.form-descr__btn,
+.form-descr__alert,
+.form-descr__upitem,
+.form-descr__subitem,
+.form-descr__copy-btn,
+.__select,
+.build-list__title,
+.build-list__search,
+.build-list__reload,
+.build-list__home-build-link,
+.build-list__item,
+.build-list__column,
+.popup__title,
+.popup__placeholder,
+.popup__item::placeholder,
+.popup__textarea::placeholder,
+.sidebar__vk span,
+.sidebar__twich span,
+.sidebar__youtub span,
+.sidebar__preorder span,
+.registration__title {
+  font-family: "Blinker-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.bg {
+  background-image: url("../img/Main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.header {
+  width: 100vw;
+  background-color: #060d18;
+  position: relative;
+  z-index: 50;
+}
+
+.header a {
+  color: white;
+}
+
+.header__inner {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__account {
+  flex: 30%;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__link {
+  position: relative;
+}
+
+.header__link:first-child {
+  margin-right: 30px;
+}
+
+.header__link span {
+  overflow: hidden;
+  padding: 10px;
+  display: block;
+  position: relative;
+}
+
+.header__link span::after {
+  content: "";
+  position: absolute;
+  background-color: #ff4656;
+  width: 120%;
+  height: calc(100% + 10px);
+  transform: skew(20deg) translateY(-50%);
+  top: 50%;
+  left: -3%;
+  z-index: -1;
+  transition: left 0.2s linear;
+}
+
+.header__link::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 15px);
+  height: 50%;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 2px white solid;
+  border-right: 2px white solid;
+  border-left: 2px white solid;
+  z-index: -1;
+}
+
+.header__link::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 15px);
+  height: 50%;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 2px white solid;
+  border-right: 2px white solid;
+  border-left: 2px white solid;
+  z-index: -1;
+}
+
+.header__link span:hover::after {
+  left: 113%;
+}
+
+.header__account-first {
+  color: white;
+  font-size: 35px;
+  height: 35px;
+  width: 35px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+.header__account-first:hover {
+  color: #ff4656;
+}
+
+.header__account-first:hover .header__account-list {
+  display: flex;
+}
+
+.header__account-first::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  width: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.header__account-list {
+  position: absolute;
+  background-color: #151a21;
+  display: none;
+  flex-direction: column;
+  font-size: 16px;
+  bottom: -85px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.header__account-list:hover {
+  display: flex;
+}
+
+.header__account-item {
+  padding: 10px;
+  border-bottom: 2px white solid;
+  transition: color 0.3s linear;
+}
+
+.header__account-item:hover {
+  color: #ff4656;
+}
+
+.nav {
+  padding-right: 15%;
+  font-size: 18px;
+  flex: 70%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__burger {
+  position: relative;
+  z-index: 10;
+  transform: translateX(0);
+  padding: 0;
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.nav__burger:focus {
+  outline: none;
+}
+
+.nav__burger span {
+  display: block;
+  transition: all 0.3s linear;
+  width: 30px;
+  height: 3px;
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+}
+
+.nav__burger span::before,
+.nav__burger span::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 30px;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s linear;
+}
+
+.nav__burger span::before {
+  top: -10px;
+}
+
+.nav__burger span::after {
+  bottom: -10px;
+}
+
+.nav .burger__active span {
+  background-color: transparent;
+}
+
+.nav .burger__active span::before {
+  transform: rotate(-36deg);
+  top: 0;
+  left: -2%;
+}
+
+.nav .burger__active span::after {
+  transform: rotate(36deg);
+  bottom: 0;
+  left: -2%;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo span {
+  display: block;
+  font-size: 23px;
+}
+
+.nav__link {
+  transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+  color: #ff4656;
+}
+
+.nav__img {
+  height: 50px;
+}
+
+.nav__wrapper {
+  position: relative;
+}
+
+.nav__wrapper:hover .nav__link {
+  color: #ff4656;
+}
+
+.nav__wrapper:hover .database-box {
+  display: flex;
+}
+
+.nav__wrapper a {
+  position: relative;
+  z-index: 4;
+}
+
+.database__overfow {
+  display: flex;
+}
+
+.database-box {
+  position: absolute;
+  left: -120px;
+  top: 60px;
+  display: none;
+  z-index: 1;
+}
+
+.database-box::before {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  top: -100px;
+  left: 60px;
+  z-index: -10;
+}
+
+.database-box:hover {
+  display: flex;
+}
+
+.database-links {
+  background-color: #0f1923;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.database-links__item {
+  padding: 25px;
+}
+
+.database-links__title {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.database-links__main {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  color: white;
+  transition: color 0.2s linear;
+}
+
+.database-links__main:hover {
+  color: #ff4656;
+}
+
+.database-links__main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ff4656;
+  left: 0;
+  bottom: -4px;
+}
+
+.database-links__main:before {
+  position: absolute;
+  left: -25px;
+}
+
+.database-links__last {
+  white-space: nowrap;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: white;
+  transition: color 0.2s linear;
+}
+
+.database-links__last:hover {
+  color: #ff4656;
+}
+
+.database-links__last:before {
+  position: absolute;
+  left: -25px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.craft-links {
+  background-color: #060b0f;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+}
+
+.craft-links__item {
+  padding: 25px;
+}
+
+.craft-links__title {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.craft-links__main {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  color: white;
+  transition: color 0.2s linear;
+}
+
+.craft-links__main:hover {
+  color: #ff4656;
+}
+
+.craft-links__main::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #ff4656;
+  left: 0;
+  bottom: -4px;
+}
+
+.craft-links__main:before {
+  position: absolute;
+  left: -25px;
+}
+
+.craft-links__last {
+  white-space: nowrap;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: white;
+  transition: color 0.2s linear;
+}
+
+.craft-links__last:hover {
+  color: #ff4656;
+}
+
+.craft-links__last:before {
+  position: absolute;
+  left: -25px;
+}
+
+.database {
+  margin-top: 40px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.database__input-btn {
+  border-radius: 4px;
+  height: 40px;
+  width: 40px;
+  background-image: url(../img/magnifier_icon-icons.com_67993.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center center;
+  background-color: #ff4656;
+  margin-left: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.database__input-btn:hover {
+  background-color: white;
+}
+
+.database__input {
+  height: 40px;
+  width: 240px;
+  font-weight: 700;
+  font-size: 17px;
+  padding-left: 7px;
+}
+
+.database__adress {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+
+.database__adress span a {
+  color: #ea918e;
+  transition: all 0.2s linear;
+}
+
+.database__adress span a:hover {
+  color: #ea404e;
+}
+
+.database__adress form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.database__adress input:focus {
+  outline: none;
+}
+
+.filter {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter__item {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.filter__item--second {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.filter__item--second .filter__link {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.filter__link {
+  color: white;
+  padding: 10px;
+  background-color: rgba(6, 13, 24, 0.7);
+  border-radius: 6%;
+  transition: background-color 0.2s linear;
+}
+
+.filter__link.active {
+  background-color: #ff4656;
+}
+
+.filter__link:hover {
+  background-color: #ff4656;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__rows {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: rgba(6, 13, 24, 0.7);
+  padding: 15px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  align-items: center;
+}
+
+.table__link {
+  position: relative;
+  width: 10%;
+  flex: 10%;
+  text-align: center;
+  color: #ff4656;
+  font-weight: 900;
+}
+
+.table__link:first-child {
+  width: 30%;
+  flex: 30%;
+  padding-left: 15%;
+}
+
+.table__link:first-child::after {
+  width: 30%;
+  left: 75%;
+  transform: translateX(-50%);
+}
+
+.table__link:nth-child(2) {
+  flex: 5%;
+}
+
+.table__link:nth-child(3) {
+  flex: 24%;
+}
+
+.table__link.active1::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -5px;
+  bottom: 0;
+  display: block;
+  background-image: url("../img/uparrow_102651.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s linear;
+  background-color: #ff4656;
+  border-radius: 50%;
+}
+
+.table__link.active2::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -5px;
+  bottom: 0;
+  display: block;
+  background-image: url("../img/uparrow_102651.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s linear;
+  background-color: #ff4656;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+
+.table__link::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  background-color: #ff4656;
+  bottom: -5px;
+  height: 3px;
+  display: block;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.table__link-undreline:hover::after {
+  opacity: 1;
+}
+
+.table__item {
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 15px;
+  background-color: rgba(6, 13, 24, 0.7);
+  border-top: 2px white solid;
+  transition: background-color 0.1s linear;
+}
+
+.table__item:hover {
+  background-color: rgba(6, 13, 24, 0.9);
+}
+
+.table__stat-perk {
+  position: relative;
+  border-radius: 50%;
+  border: #fff 1px solid;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+  background-color: #060b0f;
+}
+
+.table__stat-perk img {
+  height: 35px;
+}
+
+.table__stat-perk:hover .table__stat-descr {
+  opacity: 1;
+  z-index: 1;
+}
+
+.table__perk-stat {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.table__name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.table__stat-descr {
+  max-width: 250px;
+  position: absolute;
+  background-color: #060b0f;
+  padding: 10px;
+  right: -250px;
+  bottom: -40px;
+  z-index: -1;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.table__stat {
+  display: block;
+  flex: 10%;
+  width: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__stat:nth-child(2) {
+  flex: 15%;
+}
+
+.table__stat:nth-child(4) {
+  flex: 20%;
+  padding: 0 5px;
+}
+
+.table__stat:nth-child(3) {
+  word-break: break-word;
+}
+
+.table__img {
+  flex: 10%;
+  width: 10%;
+  height: 54px;
+  background-image: url("../img/img_rarity/common.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.table__img img {
+  filter: drop-shadow(1px 1px 10px white);
+}
+
+.table__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#Unommon,
+#unommon {
+  background-image: url("../img/img_rarity/uncommon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#rare,
+#Rare {
+  background-image: url("../img/img_rarity/rare.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#epic,
+#Epic {
+  background-image: url("../img/img_rarity/epic.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#legendary,
+#Legendary {
+  background-image: url("../img/img_rarity/legendary.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Tablecraft {
+  display: flex;
+  flex-direction: column;
+}
+
+.Tablecraft__rows {
+  background-color: rgba(6, 13, 24, 0.7);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 15px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  align-items: center;
+}
+
+.Tablecraft__img-wrapper {
+  background-image: url("../img/img_rarity/common.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: black 2px solid;
+  max-height: 34px;
+  max-width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Tablecraft__img-wrapper:hover span {
+  display: block;
+}
+
+.Tablecraft__img-wrapper span {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  z-index: 1;
+  top: -90px;
+  text-align: center;
+}
+
+.Tablecraft__img-wrapper:nth-child(2) {
+  margin-left: 4px;
+}
+
+.Tablecraft__link {
+  font-weight: 700;
+  position: relative;
+  width: 10%;
+  flex: 10%;
+  text-align: center;
+  color: #ff4656;
+}
+
+.Tablecraft__link:nth-child(4) {
+  width: 20%;
+  flex: 20%;
+}
+
+.Tablecraft__link:nth-child(2) {
+  text-align: left;
+}
+
+.Tablecraft__link:nth-child(2)::after {
+  width: 90%;
+  left: 40%;
+}
+
+.Tablecraft__link:nth-child(2).active1::before {
+  right: 0px;
+  bottom: 0;
+}
+
+.Tablecraft__link:nth-child(2).active2::before {
+  right: 0px;
+  bottom: 0;
+}
+
+.Tablecraft__link:nth-child(3)::after {
+  width: 90%;
+}
+
+.Tablecraft__link:nth-child(3).active1::before {
+  right: -30px;
+  bottom: 0;
+}
+
+.Tablecraft__link:nth-child(3).active2::before {
+  right: -30px;
+  bottom: 0;
+}
+
+.Tablecraft__link:first-child {
+  width: 40%;
+  flex: 40%;
+  padding-left: 15%;
+}
+
+.Tablecraft__link:first-child::after {
+  width: 20%;
+  left: 69%;
+  transform: translateX(-50%);
+}
+
+.Tablecraft__link:first-child.active1::before {
+  right: 60px;
+  bottom: 0;
+}
+
+.Tablecraft__link:first-child.active2::before {
+  right: 60px;
+  bottom: 0;
+}
+
+.Tablecraft__link.active1::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -5px;
+  bottom: 0;
+  display: block;
+  background-image: url("../img/uparrow_102651.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s linear;
+  background-color: #ff4656;
+  border-radius: 50%;
+}
+
+.Tablecraft__link.active2::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -5px;
+  bottom: 0;
+  display: block;
+  background-image: url("../img/uparrow_102651.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s linear;
+  background-color: #ff4656;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+
+.Tablecraft__link::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  background-color: #ff4656;
+  bottom: -5px;
+  height: 3px;
+  display: block;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.Tablecraft__link-undreline:hover::after {
+  opacity: 1;
+}
+
+.Tablecraft__item {
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 15px;
+  background-color: rgba(6, 13, 24, 0.7);
+  border-top: 2px white solid;
+  transition: background-color 0.1s linear;
+}
+
+.Tablecraft__item:hover {
+  background-color: rgba(6, 13, 24, 0.9);
+}
+
+.Tablecraft__ingr-img {
+  filter: drop-shadow(1px 1px 5px #fff);
+  height: 30px;
+  width: 30px;
+  display: block;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 5%;
+}
+
+.Tablecraft__ingr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+  margin-left: 5px;
+}
+
+.Tablecraft__stat {
+  display: block;
+  flex: 10%;
+  width: 10%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tablecraft__stat:nth-child(5) {
+  width: 20%;
+  flex: 20%;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.Tablecraft__stat:nth-child(2) {
+  width: 30%;
+  flex: 30%;
+  text-align: center;
+}
+
+.Tablecraft__img {
+  flex: 10%;
+  width: 10%;
+  height: 84px;
+  background-image: url("../img/img_rarity/common.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Tablecraft__img img {
+  filter: drop-shadow(1px 1px 10px white);
+}
+
+.Tablecraft__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.Craft {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Craft__item {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.Craft__item:first-child .Craft__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Craft__item:first-child .Craft__box .Craft__link {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.Craft__item:first-child .Craft__box .Craft__link:first-child {
+  margin-left: 0px;
+}
+
+.Craft__item--second {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.Craft__item--second .Craft__link {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.Craft__link {
+  color: white;
+  padding: 10px;
+  background-color: rgba(6, 13, 24, 0.7);
+  border-radius: 6%;
+  transition: background-color 0.2s linear;
+}
+
+.Craft__link.active {
+  background-color: #ff4656;
+}
+
+.Craft__link:hover {
+  background-color: #ff4656;
+}
+
+.TableDataAbilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TableDataAbilities__link {
+  display: flex;
+  background-color: rgba(6, 13, 24, 0.7);
+  transition: background-color 0.1s linear;
+  margin-bottom: 10px;
+}
+
+.TableDataAbilities__link:hover {
+  background-color: rgba(6, 13, 24, 0.9);
+}
+
+.TableDataAbilities__stat {
+  flex: 20%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.TableDataAbilities__stat:nth-child(2) {
+  color: white;
+}
+
+.TableDataAbilities_img {
+  flex: 20%;
+  width: 20%;
+  height: 94px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.TableDataCreatures {
+  padding: 30px 10px;
+  background-color: #151a21;
+}
+
+.TableDataCreatures__title {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.TableDataCreatures__title::before,
+.TableDataCreatures__title::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #ff4656;
+  z-index: 2;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.TableDataCreatures__title::before {
+  height: 6px;
+  width: 20%;
+  bottom: -12px;
+}
+
+.TableDataCreatures__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.TableDataCreatures__item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.TableDataCreatures__name {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.TableDataCreatures__img {
+  height: auto;
+  max-width: 700px;
+  border: 6px black solid;
+}
+
+.TableDataCreatures__box {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  background-color: black;
+  position: relative;
+}
+
+.TableDataCreatures__box:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 160px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: linear-gradient(180deg, transparent, #000);
+  z-index: 2;
+}
+
+.TableDataCreatures__subtitle {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.TableDataCreatures__subtitle::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #ff4656;
+  z-index: 2;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.TableDataCreatures__descr {
+  width: 50%;
+}
+
+.TableDataCreatures__img-stat {
+  height: 60px;
+  filter: drop-shadow(1px 1px 4px white);
+}
+
+.TableDataCreatures__stat {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.TableDataCreatures__text {
+  margin-left: 4px;
+  color: white;
+  font-size: 19px;
+}
+
+.TableDataFurnitur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TableDataFurnitur__rows,
+.TableDataFurnitur__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  border-bottom: 2px white solid;
+  background-color: rgba(6, 13, 24, 0.7);
+}
+
+.TableDataFurnitur_img {
+  filter: drop-shadow(1px 1px 10px #fff);
+  width: 100px;
+}
+
+.TableDataFurnitur__item {
+  padding: 10px 30px;
+  transition: background-color 0.1s linear;
+}
+
+.TableDataFurnitur__item:hover {
+  background-color: rgba(6, 13, 24, 0.9);
+}
+
+.TableDataFurnitur__link,
+.TableDataFurnitur__stat {
+  flex: 12.2857%;
+  width: 12.2857%;
+  color: white;
+  text-align: center;
+}
+
+.TableDataFurnitur__link:nth-child(2),
+.TableDataFurnitur__stat:nth-child(2) {
+  color: #ff4656;
+}
+
+.TableDataFurnitur__stat:nth-child(2) {
+  flex: 26.2857%;
+  width: 26.2857%;
+}
+
+.TableDataFurnitur__link {
+  color: #ff4656;
+}
+
+.TableDataFurnitur__link:first-child {
+  flex: 38.5714%;
+  width: 38.5714%;
+  padding-left: 18.2857%;
+}
+
+.TableDataPerks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TableDataPerks__rows,
+.TableDataPerks__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  border-bottom: 2px white solid;
+  background-color: rgba(6, 13, 24, 0.7);
+}
+
+.TableDataPerks_img {
+  height: 80px;
+}
+
+.TableDataPerks__item {
+  padding: 10px 30px;
+  transition: background-color 0.1s linear;
+}
+
+.TableDataPerks__item:hover {
+  background-color: rgba(6, 13, 24, 0.9);
+}
+
+.TableDataPerks__link,
+.TableDataPerks__stat {
+  word-break: break-word;
+  flex: 10%;
+  width: 10%;
+  color: white;
+  text-align: center;
+}
+
+.TableDataPerks__link:nth-child(2),
+.TableDataPerks__stat:nth-child(2) {
+  color: #ff4656;
+}
+
+.TableDataPerks__link:nth-child(3),
+.TableDataPerks__stat:nth-child(3) {
+  padding: 0 5px;
+  flex: 40%;
+  width: 40%;
+}
+
+.TableDataPerks__link:last-child,
+.TableDataPerks__stat:last-child {
+  flex: 20%;
+  width: 20%;
+}
+
+.TableDataPerks__link {
+  color: #ff4656;
+}
+
+.TableDataQuests {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TableDataQuests__rows,
+.TableDataQuests__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  border-bottom: 2px white solid;
+  background-color: rgba(6, 13, 24, 0.7);
+}
+
+.TableDataQuests__item {
+  padding: 30px;
+  transition: background-color 0.1s linear;
+}
+
+.TableDataQuests__item:hover {
+  background-color: rgba(6, 13, 24, 0.9);
+}
+
+.TableDataQuests__link,
+.TableDataQuests__stat {
+  flex: 12.5%;
+  width: 12.5%;
+  color: white;
+  text-align: center;
+}
+
+.TableDataQuests__link:first-child,
+.TableDataQuests__stat:first-child {
+  flex: 40%;
+  width: 40%;
+  color: #ff4656;
+  text-align: left;
+}
+
+.TableDataQuests__link:first-child::after,
+.TableDataQuests__stat:first-child::after {
+  width: 20%;
+  left: 0%;
+  transform: translateX(0%);
+}
+
+.TableDataQuests__link:nth-child(4),
+.TableDataQuests__stat:nth-child(4) {
+  flex: 22.5%;
+  width: 22.5%;
+}
+
+.TableDataQuests__link:nth-child(4)::after,
+.TableDataQuests__stat:nth-child(4)::after {
+  width: 35%;
+}
+
+.TableDataQuests__link {
+  position: relative;
+  color: #ff4656;
+}
+
+.TableDataQuests__link.active1::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -25px;
+  bottom: 0;
+  display: block;
+  background-image: url("../img/uparrow_102651.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s linear;
+  background-color: #ff4656;
+  border-radius: 50%;
+}
+
+.TableDataQuests__link.active2::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -25px;
+  bottom: 0;
+  display: block;
+  background-image: url("../img/uparrow_102651.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s linear;
+  background-color: #ff4656;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
+
+.TableDataQuests__link::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  background-color: #ff4656;
+  bottom: -5px;
+  height: 3px;
+  display: block;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.2s linear;
+}
+
+.TableDataQuests__link-undreline:hover::after {
+  opacity: 1;
+}
+
+.TableDataLore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.TableDataLore__rows,
+.TableDataLore__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  border-bottom: 2px white solid;
+  background-color: rgba(6, 13, 24, 0.7);
+}
+
+.TableDataLore__item {
+  padding: 30px;
+  transition: background-color 0.1s linear;
+}
+
+.TableDataLore__item:hover {
+  background-color: rgba(6, 13, 24, 0.9);
+}
+
+.TableDataLore__link,
+.TableDataLore__stat {
+  flex: 30%;
+  width: 30%;
+  color: white;
+  text-align: center;
+}
+
+.TableDataLore__link:first-child,
+.TableDataLore__stat:first-child {
+  color: #ff4656;
+  text-align: left;
+}
+
+.TableDataLore__link:last-child,
+.TableDataLore__stat:last-child {
+  color: #ff4656;
+}
+
+.TableDataLore__link {
+  color: #ff4656;
+}
+
+.pages {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pages__numbers,
+.pages__arrowa {
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  background-color: #ca3744;
+  margin-right: 10px;
+  border-radius: 10%;
+}
+
+.pages__numbers:hover,
+.pages__arrowa:hover {
+  background-color: #ff4656;
+}
+
+.pages__active {
+  background-color: #621b20;
+}
+
+.pages__active:hover {
+  background-color: #621b20;
+}
+
+.footer-down {
+  position: absolute;
+  bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 40px;
+  margin-top: 60px;
+  background-color: #171a21;
+  height: 140px;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+}
+
+.footer__img {
+  background-color: white;
+  border-radius: 50%;
+  height: 60px;
+  margin-right: 30px;
+}
+
+.footer__item {
+  flex: 50%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__item:last-child {
+  color: white;
+}
+
+.footer__logo-text {
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s linear;
+}
+
+.footer__logo-text:hover {
+  color: #f25924;
+}
+
+.footer__logo-text span {
+  display: block;
+}
+
+.item-inherit {
+  background-color: rgba(30, 32, 37, 0.9);
+  padding: 25px 25px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 40px;
+}
+
+.item-inherit__header {
+  width: 100%;
+  position: relative;
+}
+
+.item-inherit__header::before,
+.item-inherit__header::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #ff4656;
+  z-index: 2;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.item-inherit__header::before {
+  height: 6px;
+  width: 20%;
+  bottom: -12px;
+}
+
+.item-inherit_hed {
+  text-align: center;
+  color: white;
+}
+
+.item-inherit__wrapper {
+  background-image: url("../img/img_rarity/common.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+  height: 150%;
+  display: block;
+  flex: 50%;
+  padding: 3%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black 10px solid;
+  margin-bottom: 20px;
+}
+
+.item-inherit__wrapper img {
+  filter: drop-shadow(1px 1px 10px white);
+}
+
+.item-inherit__wrapper img {
+  height: 150%;
+}
+
+.item-inherit__descr {
+  padding: 25px 0;
+  color: white;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.item-inherit__stat {
+  font-size: 16px;
+  border: black 4px solid;
+  background-color: #ea404e;
+  width: 50%;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-inherit__stat span {
+  display: block;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.item-inherit__column {
+  width: 50%;
+  word-wrap: break-word;
+  max-width: 70%;
+}
+
+.item-inherit__name {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.item-inherit p {
+  margin: 0;
+}
+
+.item-inherit__perks {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item-inherit__perks a:hover .item-inherit__perk-descr {
+  color: #ea404e;
+}
+
+.item-inherit__link {
+  border: black 4px solid;
+  padding: 7px;
+  margin-bottom: 10px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.item-inherit__perks-img {
+  max-height: 64px;
+  margin-right: 10px;
+}
+
+.item-inherit__perk-descr {
+  word-wrap: break-word;
+  max-width: 70%;
+  color: white;
+  font-size: 15px;
+  line-height: 17px;
+  transition: color 0.2s linear;
+}
+
+.item-inherit__list {
+  width: 100%;
+}
+
+.item-inherit__list-item {
+  color: white;
+  font-size: 15px;
+  line-height: 17px;
+  display: flex;
+  border-top: black 4px solid;
+  padding: 10px;
+  border-left: black 4px solid;
+  border-right: black 4px solid;
+}
+
+.item-inherit__list-item:last-child {
+  border-bottom: black 4px solid;
+}
+
+.item-inherit__list-name {
+  flex: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right: black 4px solid;
+}
+
+.item-inherit__list-stat {
+  word-break: break-word;
+  flex: 70%;
+  text-align: center;
+}
+
+.item-inherit__recept {
+  width: 90%;
+}
+
+.item-inherit__category {
+  margin-bottom: 40px;
+}
+
+.item-inherit__category-name {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.item-inherit__ingred {
+  color: white;
+  font-size: 17px;
+}
+
+.item-inherit__recept-item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.item-inherit__recept-item:nth-child(3) {
+  margin-top: 40px;
+}
+
+.item-inherit__recept-item span {
+  margin-right: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.item-inherit__object {
+  margin-right: 3px;
+  position: relative;
+}
+
+.item-inherit__object:hover .item-inherit__item-name {
+  display: block;
+}
+
+.item-inherit__item-name {
+  display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  padding: 10px;
+  text-align: center;
+  left: 40px;
+}
+
+.item-inherit__object-wrapper {
+  border: black 2px solid;
+  background-image: url("../img/img_rarity/common.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.item-inherit__recept-img {
+  filter: drop-shadow(1px 1px 10px #fff);
+  max-width: 55px;
+}
+
+.active_search {
+  display: none;
+}
+
+.eror {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 500px;
+  background-image: url(../img/eror.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 60px;
+  color: #cad0d3;
+}
+
+.eror__title {
+  font-size: 40px;
+}
+
+.Abilities {
+  background-color: #151a21;
+  padding: 30px;
+}
+
+.Abilities__weapon-slot {
+  color: #ff4656;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.Abilities__title {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+.Abilities__title::before,
+.Abilities__title::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #ff4656;
+  z-index: 2;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Abilities__title::before {
+  height: 6px;
+  width: 20%;
+  bottom: -12px;
+}
+
+.Abilities__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Abilities__subtitle {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.Abilities__text {
+  color: #f0f3f9;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+.Abilities__box {
+  padding: 5px;
+  color: white;
+  background-color: rgba(255, 70, 86, 0.9);
+}
+
+.Abilities__name {
+  font-size: 20px;
+}
+
+.Abilities__stat {
+  margin: 3px 0 0 0;
+  font-size: 16px;
+}
+
+.Abilities__link {
+  border: 3px black solid;
+  display: block;
+  height: 170px;
+  position: relative;
+  z-index: 2;
+  border-radius: 6px;
+  background-color: #f0f3f9;
+  margin-bottom: 20px;
+  width: 220px;
+  transition: border 0.2s linear;
+}
+
+.Abilities__link:hover {
+  border: 0px black solid;
+}
+
+.Abilities__link:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-size: 210px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  top: 33px;
+}
+
+.Abilities .sword:after {
+  background-image: url(../img/sword.png);
+}
+
+.Abilities .rapier:after {
+  background-image: url(../img/rapier.png);
+}
+
+.Abilities .hatchet:after {
+  background-image: url(../img/hatchet.png);
+}
+
+.Abilities .spear:after {
+  background-image: url(../img/spear.png);
+}
+
+.Abilities .great_axe:after {
+  background-image: url(../img/greataxe.png);
+}
+
+.Abilities .WarHammer:after {
+  background-image: url(../img/warhammer.png);
+}
+
+.Abilities .bow:after {
+  background-image: url(../img/bow.png);
+}
+
+.Abilities .musket:after {
+  background-image: url(../img/musket.png);
+}
+
+.Abilities .firestaff:after {
+  background-image: url(../img/firestaff.png);
+}
+
+.Abilities .lifestaff:after {
+  background-image: url(../img/lifestaff.png);
+}
+
+.Abilities .icegantel:after {
+  background-image: url(../img/icegantel.png);
+}
+
+.Abilities-weapon {
+  padding: 20px;
+  background-color: #151a21;
+  display: block;
+}
+
+.Abilities-weapon__title {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+.Abilities-weapon__title::before,
+.Abilities-weapon__title::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #ff4656;
+  z-index: 2;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Abilities-weapon__title::before {
+  height: 6px;
+  width: 20%;
+  bottom: -12px;
+}
+
+.Abilities-weapon__trees-wrapper {
+  margin-bottom: 140px;
+  padding: 10px;
+  margin: 7px;
+  border: 5px black solid;
+}
+
+.Abilities-weapon__box {
+  display: block;
+  margin: 0 auto;
+  width: 45%;
+  color: white;
+  text-align: center;
+  border: 6px black solid;
+  filter: drop-shadow(1px 1px 6px #62686e);
+  background-color: #ff4656;
+  padding: 5px;
+  margin-bottom: 60px;
+}
+
+.Abilities-weapon__subtitle {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.Abilities-weapon__stat {
+  margin-bottom: 4px;
+}
+
+.Abilities-weapon__wrapper {
+  margin-bottom: 70px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Abilities-weapon__item {
+  flex: 50%;
+  width: 50%;
+}
+
+.Abilities-weapon__item:first-child .Abilities-weapon__main .Abilities-weapon__descr {
+  left: 140%;
+  top: -25%;
+  transform: translateX(0%);
+}
+
+.Abilities-weapon__item:last-child .Abilities-weapon__main .Abilities-weapon__descr {
+  left: -278%;
+  top: -25%;
+}
+
+.Abilities-weapon__name {
+  color: #ff4656;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.Abilities-weapon__name-rus {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.Abilities-weapon__trees {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Abilities-weapon__skill {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+.Abilities-weapon__img-wrapper {
+  cursor: pointer;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.Abilities-weapon__img-wrapper:hover .Abilities-weapon__descr {
+  opacity: 1;
+  z-index: 10;
+}
+
+.Abilities-weapon__img {
+  height: 50px;
+  width: 50px;
+}
+
+.Abilities-weapon____row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Abilities-weapon__main {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Abilities-weapon .main-img {
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Abilities-weapon .skill-active {
+  border-radius: 0%;
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Abilities-weapon .skill-active img {
+  height: 75px;
+  width: 75px;
+}
+
+.Abilities-weapon .stick-after:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  top: -90%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 44px;
+  z-index: 1;
+}
+
+.Abilities-weapon .stick-after_second:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  top: -115%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 55px;
+  z-index: 1;
+}
+
+.Abilities-weapon .stick-befor:before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  top: -334%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 160px;
+  z-index: 1;
+}
+
+.Abilities-weapon .stick-befor_second:before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  top: -312%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 150px;
+  z-index: 1;
+}
+
+.Abilities-weapon .stick-right:before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: -43%;
+  top: -95%;
+  transform: translateX(-50%);
+  width: 91px;
+  height: 2px;
+  z-index: 1;
+}
+
+.Abilities-weapon .Abilities-weapon__img-wrapper .Abilities-weapon__descr .Abilities-weapon__gif {
+  height: 240px;
+  width: auto;
+}
+
+.Abilities-weapon__descr {
+  position: absolute;
+  color: white;
+  z-index: -1;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 350px;
+  text-align: center;
+  border: 2px white solid;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.3s linear;
+  font-size: 16px;
+}
+
+.Abilities-weapon__descr:hover {
+  display: none;
+}
+
+.Abilities-weapon__skill-name {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Abilities-weapon .stick-main:after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  top: -60%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 44px;
+  z-index: 1;
+}
+
+.display-none {
+  display: none;
+}
+
+#includedContent,
+#includedContent2,
+#includedContent3,
+#includedContent4 {
+  height: 100%;
+}
+
+#includedContent .Abilities-weapon,
+#includedContent2 .Abilities-weapon,
+#includedContent3 .Abilities-weapon,
+#includedContent4 .Abilities-weapon {
+  padding-bottom: 350px;
+  background-color: transparent;
+  padding: 0;
+}
+
+#includedContent .Abilities-weapon__points,
+#includedContent2 .Abilities-weapon__points,
+#includedContent3 .Abilities-weapon__points,
+#includedContent4 .Abilities-weapon__points {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+#includedContent .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(2) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(3) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(4) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(2) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(3) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(4) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(2) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(3) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(4) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(2) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(3) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(4) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(2) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(3) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(4) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(2) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(3) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(4) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(2) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(3) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:last-child .Abilities-weapon__row:nth-child(4) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(2) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(3) .Abilities-weapon__skill:last-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:first-child .Abilities-weapon__row:nth-child(4) .Abilities-weapon__skill:last-child .Abilities-weapon__descr {
+  top: auto;
+  bottom: 60px;
+}
+
+#includedContent .Abilities-weapon__item:last-child .Abilities-weapon__row:first-child .Abilities-weapon__descr,
+#includedContent .Abilities-weapon__item:first-child .Abilities-weapon__row:first-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:last-child .Abilities-weapon__row:first-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:first-child .Abilities-weapon__row:first-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:last-child .Abilities-weapon__row:first-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:first-child .Abilities-weapon__row:first-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:last-child .Abilities-weapon__row:first-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:first-child .Abilities-weapon__row:first-child .Abilities-weapon__descr {
+  left: 120%;
+  transform: translateX(0);
+  top: 0;
+}
+
+#includedContent .Abilities-weapon__item:first-child .Abilities-weapon__row:last-child .Abilities-weapon__descr,
+#includedContent .Abilities-weapon__item:last-child .Abilities-weapon__row:last-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:first-child .Abilities-weapon__row:last-child .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon__item:last-child .Abilities-weapon__row:last-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:first-child .Abilities-weapon__row:last-child .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon__item:last-child .Abilities-weapon__row:last-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:first-child .Abilities-weapon__row:last-child .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon__item:last-child .Abilities-weapon__row:last-child .Abilities-weapon__descr {
+  left: auto;
+  right: 120%;
+  transform: translateX(0);
+  top: 0;
+}
+
+#includedContent .Abilities-weapon .Abilities-weapon__main .main-img .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon .Abilities-weapon__main .main-img .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon .Abilities-weapon__main .main-img .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon .Abilities-weapon__main .main-img .Abilities-weapon__descr {
+  left: 50%;
+  transform: translateX(-50%);
+  top: auto;
+  bottom: 80px;
+}
+
+#includedContent .Abilities-weapon .Abilities-weapon__descr,
+#includedContent2 .Abilities-weapon .Abilities-weapon__descr,
+#includedContent3 .Abilities-weapon .Abilities-weapon__descr,
+#includedContent4 .Abilities-weapon .Abilities-weapon__descr {
+  min-width: 270px;
+}
+
+#includedContent .Abilities-weapon__main,
+#includedContent2 .Abilities-weapon__main,
+#includedContent3 .Abilities-weapon__main,
+#includedContent4 .Abilities-weapon__main {
+  margin-bottom: 40px;
+}
+
+#includedContent .Abilities-weapon__calc,
+#includedContent2 .Abilities-weapon__calc,
+#includedContent3 .Abilities-weapon__calc,
+#includedContent4 .Abilities-weapon__calc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#includedContent .Abilities-weapon a,
+#includedContent2 .Abilities-weapon a,
+#includedContent3 .Abilities-weapon a,
+#includedContent4 .Abilities-weapon a {
+  transition: all 0.3s linear;
+  font-size: 16px;
+}
+
+#includedContent .Abilities-weapon__drop,
+#includedContent2 .Abilities-weapon__drop,
+#includedContent3 .Abilities-weapon__drop,
+#includedContent4 .Abilities-weapon__drop {
+  color: white;
+  background-color: #ff4656;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#includedContent .Abilities-weapon__drop:hover,
+#includedContent2 .Abilities-weapon__drop:hover,
+#includedContent3 .Abilities-weapon__drop:hover,
+#includedContent4 .Abilities-weapon__drop:hover {
+  color: #ff4656;
+  background-color: white;
+}
+
+#includedContent .Abilities-weapon__back,
+#includedContent2 .Abilities-weapon__back,
+#includedContent3 .Abilities-weapon__back,
+#includedContent4 .Abilities-weapon__back {
+  padding: 10px;
+  border: 3px #ff4656 solid;
+  color: white;
+}
+
+#includedContent .Abilities-weapon__back:hover,
+#includedContent2 .Abilities-weapon__back:hover,
+#includedContent3 .Abilities-weapon__back:hover,
+#includedContent4 .Abilities-weapon__back:hover {
+  border: 3px white solid;
+  background-color: #ff4656;
+}
+
+#includedContent .Abilities-weapon__trees-wrapper,
+#includedContent2 .Abilities-weapon__trees-wrapper,
+#includedContent3 .Abilities-weapon__trees-wrapper,
+#includedContent4 .Abilities-weapon__trees-wrapper {
+  overflow: hidden;
+}
+
+#includedContent .Abilities-weapon .skill-used,
+#includedContent2 .Abilities-weapon .skill-used,
+#includedContent3 .Abilities-weapon .skill-used,
+#includedContent4 .Abilities-weapon .skill-used {
+  background-color: #e1ca00;
+}
+
+#includedContent .skill-notused,
+#includedContent2 .skill-notused,
+#includedContent3 .skill-notused,
+#includedContent4 .skill-notused {
+  background-color: red;
+}
+
+#includedContent .Abilities-weapon__title::after,
+#includedContent2 .Abilities-weapon__title::after,
+#includedContent3 .Abilities-weapon__title::after,
+#includedContent4 .Abilities-weapon__title::after {
+  display: none;
+}
+
+#includedContent .active-background,
+#includedContent2 .active-background,
+#includedContent3 .active-background,
+#includedContent4 .active-background {
+  position: relative;
+}
+
+#includedContent .active-background:after,
+#includedContent2 .active-background:after,
+#includedContent3 .active-background:after,
+#includedContent4 .active-background:after {
+  content: "";
+  position: absolute;
+  height: 85px;
+  width: 1100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.Abilities {
+  position: relative;
+  z-index: 1;
+}
+
+.build-stat {
+  border-top: 2px #fe5766 solid;
+  padding: 40px 40px 80px;
+  width: 100%;
+}
+
+.build-stat__item {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.build-stat__this-stat {
+  max-width: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  font-size: 22px;
+}
+
+.build-stat__calc {
+  margin-right: 25px;
+  display: flex;
+}
+
+.build-stat__calc a {
+  color: white;
+  padding: 10px;
+  background-color: #ff8500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+.build-stat__calc a:hover {
+  opacity: 0.7;
+}
+
+.build-stat__calc a:nth-child(4),
+.build-stat__calc a:nth-child(1) {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-right: 5px;
+}
+
+.build-stat__calc a:nth-child(5),
+.build-stat__calc a:nth-child(2) {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.build-stat__name {
+  display: flex;
+  color: white;
+}
+
+.build-stat__line-box {
+  width: 50%;
+  flex: 50%;
+}
+
+.build-stat__stuf-decrs {
+  position: absolute;
+  overflow: hidden;
+  padding: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 45px;
+  background-color: #f0f3f9;
+  border-radius: 5px;
+  z-index: 2;
+  color: black;
+  font-size: 16px;
+  height: 0%;
+  display: block;
+  white-space: nowrap;
+  transition: all 0s linear;
+}
+
+.build-stat__stuf-decrs:hover {
+  display: none;
+}
+
+.build-stat__stuf-decrs .build-stat__block {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.build-stat__text {
+  width: 90%;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 0 10px 0 0;
+}
+
+.build-stat__ico {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 50px;
+  border: #fe5766 2px solid;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.build-stat__ico:hover {
+  background-color: #fe5766;
+  border: white 2px solid;
+}
+
+.build-stat__ico:hover .build-stat__stuf-decrs {
+  top: 35px;
+  padding: 10px;
+  height: auto;
+  transition: all 0.2s linear;
+}
+
+.build-stat__line {
+  background-color: #2a2427;
+  height: 20px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.build-stat__line .build-stat__after {
+  transition: all 0.3s linear;
+  content: "";
+  position: absolute;
+  background-color: #ffb10f;
+  height: 20px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 1.7%;
+  left: 0;
+  display: block;
+}
+
+.build-stat__kugel {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  display: block;
+  border: 1px white solid;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.build-stat__kugel:last-child .build-stat__stuf-decrs,
+.build-stat__kugel:nth-child(7) .build-stat__stuf-decrs {
+  transform: translateX(-100%);
+}
+
+.build-stat__kugel:hover .build-stat__stuf-decrs {
+  top: 20px;
+  height: auto;
+  padding: 10px;
+  transition: all 0.2s linear;
+}
+
+.build-stat__down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.build-stat__drop-stat {
+  color: white;
+  background-color: #fe5766;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  font-size: 16px;
+}
+
+.build-stat__drop-stat:hover {
+  background-color: white;
+  color: #fe5766;
+}
+
+.build-stat__down {
+  font-size: 20px;
+  color: white;
+}
+
+.form-descr__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form-descr__wrapper {
+  cursor: text;
+  position: relative;
+  width: 30%;
+  flex: 30%;
+  margin-right: 5px;
+  padding: 25px 10px 10px;
+  background-color: #443e3e;
+  transition: all 0.3s linear;
+  border-bottom: 1px solid #151a21;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.form-descr__wrapper:hover {
+  border-bottom: 1px solid white;
+  background-color: #5c595c;
+}
+
+.form-descr__wrapper .form-descr__placeholder {
+  bottom: 11px;
+  left: 12px;
+}
+
+.form-descr__list {
+  position: relative;
+  width: 30%;
+  flex: 30%;
+  padding: 25px 0px 10px;
+  background-color: #443e3e;
+  transition: all 0.3s linear;
+  border-bottom: 1px solid #151a21;
+}
+
+.form-descr__list:nth-child(2) {
+  margin-right: 5px;
+}
+
+.form-descr__list:hover {
+  border-bottom: 1px solid white;
+  background-color: #5c595c;
+}
+
+.form-descr__list .form-descr__placeholder {
+  bottom: 32px;
+  left: 12px;
+  font-size: 13px;
+  color: #cacac7;
+}
+
+.form-descr__name {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.form-descr__name:focus {
+  outline: none;
+}
+
+.form-descr__placeholder {
+  position: absolute;
+  color: white;
+  transition: all 0.2s linear;
+  font-size: 16px;
+}
+
+.form-descr__placeholder.active-placeholder {
+  bottom: 32px;
+  color: #fe5766;
+  font-size: 13px;
+}
+
+.form-descr__placeholder.active-placeholder2 {
+  color: #fe5766;
+}
+
+.form-descr__check-wrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.form-descr__check-wrapper:hover .form-descr__check-box {
+  background-color: #fe5766;
+  border: 3px #fe5766 solid;
+}
+
+.form-descr__check-wrapper:hover .form-descr__check-box::after {
+  background-color: #fe5766;
+  box-shadow: 0 0 10px 20px rgba(254, 87, 102, 0.8);
+}
+
+.form-descr .check-box-active .form-descr__check-box {
+  background-color: red;
+  border: 3px red solid;
+}
+
+.form-descr .check-box-active .form-descr__arrow:after {
+  width: 7px;
+}
+
+.form-descr .check-box-active .form-descr__arrow::before {
+  width: 15px;
+}
+
+.form-descr__arrow {
+  display: block;
+  height: 19px;
+  width: 23px;
+  position: relative;
+}
+
+.form-descr__arrow:after,
+.form-descr__arrow:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s linear;
+}
+
+.form-descr__arrow:after {
+  transform: rotateZ(59deg);
+  top: 11px;
+  width: 0;
+  left: 3px;
+}
+
+.form-descr__arrow::before {
+  transform: rotateZ(-59deg);
+  top: 9px;
+  left: 5px;
+  width: 0;
+}
+
+.form-descr__check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 2px;
+  border: 3px #cacac7 solid;
+  position: relative;
+  background-color: transparent;
+}
+
+.form-descr__check-box:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  z-index: -1;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0 0 10px 20px transparent;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%) translateY(50%);
+  transition: all 0.3s linear;
+}
+
+.form-descr__check-text {
+  color: white;
+  margin-left: 25px;
+}
+
+.form-descr__btn {
+  padding: 10px;
+  color: white;
+  background-color: #fe5766;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+
+.form-descr__btn:hover {
+  opacity: 0.8;
+}
+
+.form-descr__alert {
+  color: red;
+  font-size: 18px;
+}
+
+.form-descr__item:nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.form-descr__main-atr {
+  width: 100%;
+  display: flex;
+}
+
+.form-descr__item-wrapper {
+  padding: 10px;
+  width: 30%;
+  flex: 30%;
+  background-color: #443e3e;
+  margin-right: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.form-descr__upitem {
+  font-size: 13px;
+  color: #cacac7;
+}
+
+.form-descr__subitem {
+  font-size: 17px;
+  color: white;
+}
+
+.form-descr .special {
+  display: block;
+}
+
+.form-descr__main-descr {
+  margin: 20px 0;
+  color: white;
+  border: 1px white solid;
+  padding: 10px;
+}
+
+.form-descr__copy-text {
+  padding: 10px;
+  color: white;
+  background-color: #fe5766;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.form-descr__copy-btn {
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border: 3px #fe5766 solid;
+  transition: all 0.3s linear;
+  max-width: 185px;
+}
+
+.form-descr__copy-btn:hover {
+  background-color: #fe5766;
+  border: 3px white solid;
+}
+
+.display-none1 {
+  display: none;
+}
+
+.__select {
+  position: relative;
+  height: 21px;
+  margin: 0 auto;
+  padding: 0 10px;
+  color: white;
+}
+
+.__select[data-state="active"] .__select__title::before {
+  transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.__select[data-state="active"] .__select__title::after {
+  transform: translate(3px, -50%) rotate(45deg);
+}
+
+.__select[data-state="active"] .__select__content {
+  opacity: 1;
+}
+
+.__select[data-state="active"] .__select__label + .__select__input + .__select__label {
+  max-height: 40px;
+  border-top-width: 1px;
+}
+
+.__select__title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.__select__title::before,
+.__select__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  transition: all 0.3s ease-out;
+  background-color: white;
+  transform: translate(-3px, -50%) rotate(45deg);
+}
+
+.__select__title::after {
+  transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.__select__title:hover {
+  border-color: #fe5766;
+}
+
+.__select__title:hover::before,
+.__select__title:hover::after {
+  background-color: #fe5766;
+}
+
+.__select__content {
+  position: absolute;
+  top: 35px;
+  left: 3px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 6px);
+  background-color: #443e3e;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: 8;
+}
+
+.__select__input {
+  display: none;
+}
+
+.__select__input:checked + label {
+  background-color: #fe4144;
+}
+
+.__select__label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  max-height: 0;
+  padding: 0 16px;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.__select__label:hover {
+  background-color: #fe5766 !important;
+  color: #ffffff;
+}
+
+.text-redact {
+  background-color: #151a21;
+  width: 100%;
+  border: 1px #443e3e solid;
+}
+
+.text-redact__area {
+  min-height: 200px;
+  color: white;
+  padding: 10px;
+}
+
+.text-redact__area sup {
+  vertical-align: super;
+}
+
+.text-redact__area sub {
+  vertical-align: sub;
+}
+
+.text-redact__area li,
+.text-redact__area ul {
+  list-style: square;
+  margin: auto;
+  padding: auto;
+}
+
+.text-redact__area ol {
+  list-style-type: decimal;
+}
+
+.text-redact__area ol li {
+  list-style-type: decimal;
+}
+
+.text-redact__area:focus {
+  outline: none;
+}
+
+.text-redact__panel {
+  border-bottom: 1px #443e3e solid;
+  padding: 10px 14px;
+  display: flex;
+}
+
+.text-redact__panel:last-child {
+  border: none;
+}
+
+.text-redact__panel a {
+  color: white;
+}
+
+.text-redact__panel1 {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  border-right: 1px #443e3e solid;
+}
+
+.text-redact__svg-wrapper {
+  margin-right: 16px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  position: relative;
+}
+
+.text-redact__svg-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.text-redact__svg-wrapper:hover {
+  color: #fe5766;
+}
+
+.text-redact__svg-wrapper:hover:after {
+  opacity: 1;
+}
+
+.text-redact__svg-wrapper:hover .text-redact__descr {
+  opacity: 1;
+  transition-delay: 0.8s;
+  z-index: 0;
+}
+
+.text-redact .area-active {
+  color: #fe5766;
+}
+
+.text-redact #italic {
+  font-style: italic;
+}
+
+.text-redact #strikethrough:hover::before {
+  background-color: #fe5766;
+}
+
+.text-redact #strikethrough::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 10px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  transition: all 0.3s linear;
+}
+
+.text-redact__descr {
+  opacity: 0;
+  padding: 5px;
+  background-color: #f0f3f9;
+  color: black;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  transition: all 0.2s linear;
+  z-index: -1;
+  font-size: 13px;
+  font-style: normal;
+  transition-delay: 0s;
+}
+
+.text-redact__descr:hover {
+  display: none;
+}
+
+.text-redact #font_style,
+.text-redact #font_size {
+  margin-right: 5px;
+  background-color: #151a21;
+  border: 1px white solid;
+  padding: 0 4px;
+  display: flex;
+  width: 190px;
+  padding-top: 5px;
+}
+
+.text-redact #font_style::before,
+.text-redact #font_size::before {
+  color: white;
+}
+
+.text-redact #font_style .__select__title,
+.text-redact #font_size .__select__title {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.text-redact #font_style .__select,
+.text-redact #font_size .__select {
+  position: static;
+}
+
+.build-list {
+  margin-top: 40px;
+  background-color: #151a21;
+  padding: 15px;
+}
+
+.build-list__title {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 40px;
+}
+
+.build-list__title::before,
+.build-list__title::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #ff4656;
+  z-index: 2;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.build-list__title::before {
+  height: 6px;
+  width: 20%;
+  bottom: -12px;
+}
+
+.build-list__nav {
+  display: flex;
+}
+
+.build-list .form-descr__list {
+  margin-right: 5px;
+}
+
+.build-list .form-descr__list:last-child {
+  margin-right: 0;
+}
+
+.build-list__btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5px;
+}
+
+.build-list__search,
+.build-list__reload {
+  padding: 10px;
+  background-color: #ff4656;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+
+.build-list__search:hover,
+.build-list__reload:hover {
+  background-color: white;
+  color: #ff4656;
+}
+
+.build-list__home-build-link {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+  display: inline-block;
+  border: 3px #ff4656 solid;
+  padding: 10px;
+  transition: all 0.3s linear;
+}
+
+.build-list__home-build-link:hover {
+  background-color: #ff4656;
+  border: 3px white solid;
+}
+
+.build-list__row-name {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.build-list__item {
+  color: white;
+  text-align: center;
+  flex: 20%;
+}
+
+.build-list__link {
+  display: flex;
+  padding: 15px 10px;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  border: 1px white solid;
+  transition: all 0.3s linear;
+  margin-bottom: 5px;
+}
+
+.build-list__link:hover {
+  background-color: #1e2631;
+}
+
+.build-list__column {
+  text-align: center;
+  flex: 20%;
+  color: white;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+
+.popup__wrapper {
+  position: relative;
+  height: 1px;
+}
+
+.popup__wrapper::before {
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.3s linear;
+  transform: translateY(-100px);
+}
+
+.popup__title {
+  color: #ff4656;
+  font-size: 22px;
+  text-align: center;
+}
+
+.popup__text span {
+  font-size: 13px;
+  color: #777a7a;
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 16px;
+  height: 25px;
+  width: 25px;
+}
+
+.popup__close span {
+  position: relative;
+  height: 25px;
+  width: 25px;
+}
+
+.popup__close span::after,
+.popup__close span::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+
+.popup__close span::after {
+  transform: rotate(45deg);
+}
+
+.popup__close span::before {
+  transform: rotate(-45deg);
+}
+
+.popup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__item {
+  border: none;
+}
+
+.popup__item:focus {
+  outline: none;
+}
+
+.popup__textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+.popup__textarea:focus {
+  outline: none;
+}
+
+.popup__btn {
+  max-width: 100px;
+  padding: 10px;
+  background-color: #ff4656;
+  border: 2px white solid;
+  color: white;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup__btn:disabled {
+  cursor: not-allowed;
+}
+
+.popup__btn:focus {
+  outline: none;
+}
+
+.popup__btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px #ff4656 solid;
+}
+
+.popup__item-wrapper,
+.popup__textarea-wrapper {
+  cursor: text;
+  position: relative;
+  width: 50%;
+  flex: 50%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 25px 10px 10px;
+  background-color: #e1dee1;
+  transition: all 0.3s linear;
+  border-bottom: 1px solid black;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.popup__item-wrapper:hover,
+.popup__textarea-wrapper:hover {
+  border-bottom: 1px solid #ff4656;
+  background-color: #b8b8b8;
+}
+
+.popup__item-wrapper .popup__placeholder,
+.popup__textarea-wrapper .popup__placeholder {
+  bottom: 11px;
+  left: 12px;
+}
+
+.popup__placeholder {
+  position: absolute;
+  color: black;
+  transition: all 0.2s linear;
+  font-size: 16px;
+}
+
+.popup__placeholder.active-placeholder {
+  bottom: 32px;
+  color: #fe5766;
+  font-size: 13px;
+}
+
+.popup__item,
+.popup__textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.popup__item:focus,
+.popup__textarea:focus {
+  outline: none;
+}
+
+.popup__textarea-wrapper {
+  flex: 100%;
+  width: 100%;
+}
+
+.popup__textarea-wrapper .popup__placeholder {
+  top: 30px;
+}
+
+.popup__textarea-wrapper .popup__placeholder.active-placeholder3 {
+  top: 10px;
+  color: #fe5766;
+  font-size: 13px;
+}
+
+.popup-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-open .popup__content {
+  transform: translateY(0);
+}
+
+.body-lock {
+  overflow-y: hidden;
+}
+
+.container_sidebar {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container_sidebar .item-inherit {
+  flex: 80%;
+  width: 80%;
+}
+
+.container_sidebar .item-inherit__content {
+  display: flex;
+}
+
+.container_sidebar .item-inherit__content .item-inherit__wrapper {
+  height: auto;
+}
+
+.container_sidebar-Home {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sidebar {
+  flex: 20%;
+  width: 20%;
+  margin: 20px 0 40px;
+  background-color: #151a21;
+  padding: 15px 10px 45px;
+}
+
+.sidebar__vk,
+.sidebar__twich,
+.sidebar__youtub {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  color: #5181b8;
+  padding: 15px;
+  font-size: 29px;
+  border: 3px solid #5181b8;
+  transition: all 0.3s linear;
+}
+
+.sidebar__vk:hover,
+.sidebar__twich:hover,
+.sidebar__youtub:hover {
+  background-color: white;
+}
+
+.sidebar__vk span,
+.sidebar__twich span,
+.sidebar__youtub span {
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+.sidebar__vk:focus,
+.sidebar__twich:focus,
+.sidebar__youtub:focus {
+  outline: none;
+}
+
+.sidebar__twich {
+  color: #9147ff;
+  border: 3px solid #9147ff;
+}
+
+.sidebar__twich span {
+  text-transform: capitalize;
+}
+
+.sidebar__youtub {
+  color: #ea404e;
+  border: 3px solid #ea404e;
+}
+
+.sidebar__youtub span {
+  text-transform: capitalize;
+}
+
+.sidebar__preorder {
+  margin-bottom: 15px;
+  border: 4px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar__preorder:hover span {
+  background-color: white;
+  color: #ea404e;
+}
+
+.sidebar__preorder span {
+  background-color: #ea404e;
+  font-size: 14px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.sidebar__img {
+  height: auto;
+  width: 100%;
+}
+
+.item-inherit__content-Creaturs .sidebar {
+  margin: 0;
+  background-color: #060d18;
+}
+
+.item-inherit__content-Creaturs .TableDataCreatures {
+  flex: 80%;
+  width: 80%;
+}
+
+.sidbar-wrapper {
+  display: flex;
+}
+
+.sidbar-wrapper .sidebar {
+  margin: 0;
+  background-color: #060d18;
+  flex: 18%;
+  width: 18%;
+}
+
+.sidbar-wrapper .sidbar-inherit {
+  flex: 82%;
+  width: 82%;
+}
+
+.registration {
+  margin-bottom: 40px;
+  background-color: #151a21;
+  padding: 25px;
+}
+
+.registration__title {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 40px;
+}
+
+.registration__title::before,
+.registration__title::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  background-color: #ff4656;
+  z-index: 2;
+  height: 2px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.registration__title::before {
+  height: 6px;
+  width: 20%;
+  bottom: -12px;
+}
+
+.registration__label {
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.registration__input {
+  border-radius: 5px;
+  border: 1px #151a21 solid;
+  padding: 0 35px;
+  height: 40px;
+  width: 100%;
+}
+
+.registration__input:disabled {
+  background-color: #dbdbdb;
+  cursor: not-allowed;
+}
+
+.registration__input::-moz-placeholder {
+  font-size: 14px;
+}
+
+.registration__input:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.registration__input::placeholder {
+  font-size: 14px;
+}
+
+.registration__input:focus {
+  border-color: #3273dc;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+  outline: none;
+}
+
+.registration__subtext {
+  color: #afa9ac;
+  font-size: 14px;
+}
+
+.registration__input-wrapper {
+  position: relative;
+}
+
+.registration__ico {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #dbdbdb;
+  transition: all 0.1s linear;
+}
+
+.registration__input-wrapper:hover .registration__ico {
+  color: #ff4656;
+}
+
+.registration__item {
+  margin-bottom: 15px;
+}
+
+.registration__btn {
+  margin-top: 40px;
+  height: 40px;
+  background-color: #ff4656;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s linear;
+  margin-bottom: 40px;
+}
+
+.registration__btn:hover {
+  background-color: white;
+  color: #ff4656;
+}
+
+.registration__errors {
+  margin-bottom: 20px;
+  color: red;
+}
+
+.registration__sended {
+  padding: 10px;
+  color: white;
+  margin-bottom: 20px;
+  background-color: #ff4656;
+  display: inline-block;
+}
+
+.registration__forgot {
+  font-size: 16px;
+  color: #3273dc;
+  margin-bottom: 5px;
+  transition: color 0.1s linear;
+}
+
+.registration__forgot:hover {
+  color: #dec4a5;
+}
+
+.comment__title {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.comment__text {
+  height: 150px;
+  padding: 15px;
+  resize: none;
+  width: 100%;
+}
+
+.comment__text::-moz-placeholder {
+  font-size: 14px;
+}
+
+.comment__text:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.comment__text::placeholder {
+  font-size: 14px;
+}
+
+.comment__text:focus {
+  outline: none;
+}
+
+.comment__btn {
+  margin-bottom: 50px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #FE5766;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+  transition: all .3s linear;
+}
+
+.comment__btn:hover {
+  background-color: white;
+  color: #FE5766;
+}
+
+.comment__box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.comment__item {
+  width: 100%;
+  color: white;
+  display: flex;
+  border-bottom: white 2px solid;
+}
+
+.comment__left {
+  width: 80%;
+}
+
+.comment__right {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment__name {
+  padding: 5px;
+}
+
+.comment__messeg {
+  padding: 5px;
+}
+
+.comment__reg-link {
+  padding: 10px;
+  border: 3px solid #FE5766;
+  color: white;
+  transition: all .3s linear;
+}
+
+.comment__reg-link:hover {
+  background-color: white;
+  color: #FE5766;
+}
+
+@media (max-width: 1330px) {
+  .Abilities-weapon__item:last-child .Abilities-weapon__row:last-child .Abilities-weapon__descr {
+    left: auto;
+    right: 120%;
+    transform: translateX(0);
+    top: 0;
+  }
+
+  .Abilities-weapon__item:first-child .Abilities-weapon__row:first-child .Abilities-weapon__descr {
+    left: 120%;
+    transform: translateX(0);
+    top: 0;
+  }
+
+  .container_sidebar-Home {
+    max-width: 1030px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .container_sidebar-Home .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 1130px) {
+  .container_sidebar {
+    max-width: 1030px;
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .container_sidebar .item-inherit {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .container_sidebar .TableDataCreatures {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .container_sidebar .item-inherit__content {
+    display: block;
+  }
+
+  .container_sidebar .item-inherit__content .item-inherit__wrapper {
+    height: auto;
+  }
+
+  .container_sidebar .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 1060px) {
+  .container {
+    padding: 0px 30px;
+  }
+
+  .header__account {
+    padding-right: 40px;
+  }
+
+  .header__link span {
+    font-size: 14px;
+  }
+
+  .TableDataCreatures__title {
+    font-size: 30px;
+  }
+
+  .TableDataCreatures__name {
+    font-size: 20px;
+  }
+
+  .TableDataCreatures__img {
+    width: 500px;
+  }
+
+  .TableDataCreatures__subtitle {
+    font-size: 16px;
+  }
+
+  .TableDataCreatures__img-stat {
+    height: 50px;
+  }
+
+  .TableDataCreatures__text {
+    font-size: 17px;
+  }
+
+  .database-box {
+    flex-direction: column;
+    height: 530px;
+  }
+
+  .database-box::before {
+    left: 90px;
+    width: 190px;
+  }
+
+  .database__overfow {
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .database__overfow::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .database__overfow::-webkit-scrollbar-track {
+    box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+  }
+
+  .database__overfow::-webkit-scrollbar-thumb {
+    background-color: #ff4656;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.25)), color-stop(0.5, transparent), to(transparent));
+  }
+
+  .Abilities-weapon__title {
+    font-size: 30px;
+  }
+
+  .Abilities-weapon__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Abilities-weapon__wrapper .Abilities-weapon__main .main-img .Abilities-weapon__descr {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -200%;
+  }
+
+  .Abilities-weapon__item {
+    flex: 70%;
+    width: 70%;
+  }
+
+  .Abilities-weapon__item:last-child .Abilities-weapon__row:first-child .Abilities-weapon__descr {
+    left: 120%;
+    transform: translateX(0);
+    top: 0;
+  }
+
+  .Abilities-weapon__item:first-child .Abilities-weapon__row:last-child .Abilities-weapon__descr {
+    left: auto;
+    right: 120%;
+    transform: translateX(0);
+    top: 0;
+  }
+
+  .Abilities-weapon .stick-right::before {
+    left: -89%;
+    width: calc(100vw / 7.85);
+  }
+
+  #includedContent .Abilities-weapon__title,
+  #includedContent2 .Abilities-weapon__title,
+  #includedContent3 .Abilities-weapon__title,
+  #includedContent4 .Abilities-weapon__title {
+    font-size: 30px;
+  }
+
+  .Abilities__title {
+    font-size: 30px;
+  }
+
+  .Abilities__text {
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  .Abilities__wrapper {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .Abilities__row {
+    flex: 30%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-inherit__wrapper img {
+    height: 150px;
+  }
+
+  .item-inherit_hed {
+    font-size: 28px;
+  }
+
+  .item-inherit__perks-img {
+    max-height: 45px;
+  }
+
+  .item-inherit__perks {
+    padding: 0;
+  }
+
+  .item-inherit__name {
+    font-size: 20px;
+  }
+
+  .item-inherit__recept-item {
+    flex-wrap: wrap;
+  }
+
+  .item-inherit__object {
+    margin-bottom: 5px;
+  }
+
+  .filter__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter__link {
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  .TableDataFurnitur__stat {
+    word-break: break-word;
+  }
+
+  .Tablecraft__link:nth-child(4) {
+    display: none;
+  }
+
+  .Tablecraft__stat:nth-child(5) {
+    display: none;
+  }
+
+  .text-redact__panel {
+    flex-wrap: wrap;
+  }
+
+  .text-redact__panel1 {
+    margin-bottom: 10px;
+  }
+
+  .build-stat {
+    padding: 40px 16px 80px;
+  }
+
+  .build-stat__stuf-decrs {
+    font-size: 14px;
+  }
+
+  .build-stat__text {
+    font-size: 18px;
+  }
+
+  .build-list__title {
+    font-size: 30px;
+  }
+
+  .build-list__nav {
+    flex-wrap: wrap;
+  }
+
+  .form-descr__list {
+    flex: 49%;
+    width: 49%;
+  }
+
+  .form-descr__list:nth-child(2) {
+    margin-right: 0px;
+  }
+
+  .nav {
+    font-size: 17px;
+    padding-right: 9%;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__link span {
+    font-size: 12px;
+  }
+
+  .nav {
+    font-size: 15px;
+    padding-right: 0%;
+  }
+
+  .database-box::before {
+    left: 105px;
+    width: 130px;
+  }
+
+  .Abilities-weapon__box {
+    width: 70%;
+  }
+
+  .Abilities-weapon__item {
+    width: 90%;
+    flex: 90%;
+  }
+
+  .Abilities-weapon .stick-right::before {
+    left: -76%;
+    width: calc(100vw / 6.45);
+    top: -95%;
+  }
+
+  .Abilities__row {
+    flex: 50%;
+    width: 50%;
+  }
+
+  .table__link:last-child {
+    display: none;
+  }
+
+  .table__stat:last-child {
+    display: none;
+  }
+
+  .pages {
+    flex-wrap: wrap;
+  }
+
+  .pages__numbers,
+  .pages__arrowa {
+    margin-bottom: 10px;
+  }
+
+  .TableDataFurnitur__link:last-child {
+    display: none;
+  }
+
+  .TableDataFurnitur__stat:last-child {
+    display: none;
+  }
+
+  .Tablecraft__link:last-child {
+    display: none;
+  }
+
+  .Tablecraft__stat:last-child {
+    display: none;
+  }
+
+  .build-list__column {
+    font-size: 14px;
+  }
+
+  .build-list__item {
+    font-size: 14px;
+  }
+
+  .popup__item-wrapper {
+    flex: 80%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 675px) {
+  .header__account {
+    display: none;
+  }
+
+  .database-links {
+    padding: 10px;
+  }
+
+  .database-links__item {
+    padding: 10px 25px 0;
+  }
+
+  .craft-links {
+    padding: 10px;
+  }
+
+  .craft-links__item {
+    padding: 10px 25px 0;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .TableDataCreatures__title {
+    font-size: 30px;
+  }
+
+  .TableDataCreatures__name {
+    font-size: 20px;
+  }
+
+  .TableDataCreatures__img {
+    width: 400px;
+  }
+
+  .TableDataCreatures__subtitle {
+    font-size: 16px;
+  }
+
+  .TableDataCreatures__img-stat {
+    height: 50px;
+  }
+
+  .TableDataCreatures__text {
+    font-size: 17px;
+  }
+
+  .footer__img {
+    height: 50px;
+  }
+
+  .footer__logo-text {
+    font-size: 15px;
+  }
+
+  .footer__item {
+    font-size: 15px;
+  }
+
+  .Abilities-weapon__descr {
+    min-width: 300px;
+  }
+
+  .Abilities-weapon .Abilities-weapon__img-wrapper .Abilities-weapon__descr .Abilities-weapon__gif {
+    height: 150px;
+  }
+
+  .Abilities-weapon__box {
+    width: 80%;
+  }
+
+  .Abilities-weapon__item {
+    width: 100%;
+    flex: 100%;
+  }
+
+  .Abilities {
+    padding: 20px 7px;
+  }
+
+  .Abilities__name {
+    font-size: 17px;
+  }
+
+  .Abilities__subtitle {
+    font-size: 17px;
+  }
+
+  .Abilities__link::after {
+    background-size: 160px;
+  }
+
+  .Abilities__link {
+    width: 180px;
+  }
+
+  .Abilities__stat {
+    font-size: 15px;
+  }
+
+  .item-inherit {
+    padding: 25px 10px 45px;
+  }
+
+  .item-inherit__wrapper {
+    width: 80%;
+  }
+
+  .item-inherit__stat {
+    width: 70%;
+  }
+
+  .item-inherit__link {
+    width: 48%;
+  }
+
+  .item-inherit__recept-img {
+    max-width: 45px;
+  }
+
+  .table__link:nth-child(3) {
+    display: none;
+  }
+
+  .table__stat:nth-child(4) {
+    display: none;
+  }
+
+  .filter__item:last-child {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter__item:last-child .filter__box:first-child {
+    margin-bottom: 20px;
+  }
+
+  .TableDataFurnitur__link:nth-child(5) {
+    display: none;
+  }
+
+  .TableDataFurnitur__stat:nth-child(6) {
+    display: none;
+  }
+
+  .Tablecraft__link:nth-child(3) {
+    display: none;
+  }
+
+  .Tablecraft__stat:nth-child(4) {
+    display: none;
+  }
+
+  #includedContent .Abilities-weapon__calc .Abilities-weapon__back,
+  #includedContent .Abilities-weapon__calc .Abilities-weapon__drop,
+  #includedContent2 .Abilities-weapon__calc .Abilities-weapon__back,
+  #includedContent2 .Abilities-weapon__calc .Abilities-weapon__drop,
+  #includedContent3 .Abilities-weapon__calc .Abilities-weapon__back,
+  #includedContent3 .Abilities-weapon__calc .Abilities-weapon__drop,
+  #includedContent4 .Abilities-weapon__calc .Abilities-weapon__back,
+  #includedContent4 .Abilities-weapon__calc .Abilities-weapon__drop {
+    font-size: 14px;
+  }
+
+  .build-stat__item {
+    flex-direction: column;
+  }
+
+  .build-stat__calc {
+    margin-bottom: 10px;
+  }
+
+  .build-stat__line-box {
+    flex: 80%;
+    width: 80%;
+  }
+
+  .build-stat__stuf-decrs {
+    min-width: 150px;
+    white-space: normal;
+  }
+
+  .build-stat__sum-point {
+    font-size: 16px;
+  }
+
+  .form-descr__placeholder {
+    font-size: 14px;
+  }
+
+  .form-descr__item {
+    flex-wrap: wrap;
+  }
+
+  .form-descr__wrapper {
+    flex: 50%;
+    width: 50%;
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+
+  .form-descr__list {
+    flex: 49%;
+    width: 49%;
+  }
+
+  .form-descr__list:nth-child(2) {
+    margin-right: 4px;
+  }
+
+  .form-descr__subitem {
+    font-size: 15px;
+  }
+
+  .form-descr__copy-btn {
+    font-size: 15px;
+    max-width: 175px;
+  }
+
+  .form-descr__item-wrapper {
+    flex: 48%;
+    width: 48%;
+    margin-bottom: 5px;
+  }
+
+  .form-descr__item-wrapper:nth-child(1) {
+    flex: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .form-descr__item-wrapper:last-child {
+    margin-right: 0;
+  }
+
+  .form-descr__main-atr {
+    flex-wrap: wrap;
+  }
+
+  .__select__title {
+    font-size: 14px;
+  }
+
+  .__select__label {
+    font-size: 14px;
+  }
+
+  .build-list__column:first-child {
+    display: none;
+  }
+
+  .build-list__item:first-child {
+    display: none;
+  }
+
+  .popup__item-wrapper {
+    flex: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 510px) {
+  .nav {
+    padding-right: 0%;
+  }
+
+  .footer__img {
+    height: 40px;
+  }
+
+  .footer__logo-text {
+    font-size: 13px;
+  }
+
+  .footer__item {
+    font-size: 14px;
+  }
+
+  .database-links__title {
+    font-size: 15px;
+  }
+
+  .database-links__main {
+    font-size: 15px;
+  }
+
+  .database-links__last {
+    font-size: 13px;
+  }
+
+  .database__adress {
+    flex-direction: column;
+  }
+
+  .database__adress form {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .database__input {
+    width: 85%;
+  }
+
+  .TableDataCreatures__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TableDataCreatures__box::after {
+    height: 40px;
+  }
+
+  .TableDataCreatures__title {
+    font-size: 25px;
+  }
+
+  .TableDataCreatures__name {
+    font-size: 17px;
+  }
+
+  .TableDataCreatures__subtitle {
+    font-size: 14px;
+  }
+
+  .TableDataCreatures__img {
+    width: 300px;
+  }
+
+  .TableDataCreatures__descr {
+    width: 100%;
+  }
+
+  .TableDataCreatures__stat:nth-child(2) {
+    margin: 0;
+  }
+
+  .Abilities-weapon {
+    padding: 20px 10px;
+  }
+
+  .Abilities-weapon__box {
+    width: 100%;
+  }
+
+  .Abilities-weapon__skill {
+    margin-bottom: 15px;
+  }
+
+  .Abilities-weapon__subtitle {
+    font-size: 15px;
+  }
+
+  .Abilities-weapon__stat {
+    font-size: 14px;
+  }
+
+  .Abilities-weapon .skill-active {
+    height: 50px;
+    width: 50px;
+  }
+
+  .Abilities-weapon .skill-active img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .Abilities-weapon .main-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .Abilities-weapon__img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .Abilities-weapon__img-wrapper {
+    height: 35px;
+    width: 35px;
+  }
+
+  .Abilities-weapon .stick-after:after {
+    top: -146%;
+    height: 48px;
+  }
+
+  .Abilities-weapon .stick-befor:before {
+    height: 145px;
+    top: -441%;
+  }
+
+  .Abilities-weapon .stick-befor_second:before {
+    height: 138px;
+    top: -417%;
+  }
+
+  .Abilities-weapon .stick-after_second:after {
+    top: -170%;
+  }
+
+  .Abilities-weapon .stick-main:after {
+    top: -101%;
+    height: 48px;
+  }
+
+  .Abilities-weapon .stick-right::before {
+    left: -71%;
+    width: calc(100vw / 6.15);
+    top: -146%;
+  }
+
+  .Abilities-weapon__descr {
+    min-width: 250px;
+    padding: 5px;
+  }
+
+  .Abilities-weapon .Abilities-weapon__img-wrapper .Abilities-weapon__descr .Abilities-weapon__gif {
+    height: 120px;
+  }
+
+  .Abilities-weapon__skill-name {
+    font-size: 15px;
+  }
+
+  .Abilities-weapon__text {
+    font-size: 14px;
+  }
+
+  #includedContent .Abilities-weapon,
+  #includedContent2 .Abilities-weapon,
+  #includedContent3 .Abilities-weapon,
+  #includedContent4 .Abilities-weapon {
+    padding: 20px 10px;
+  }
+
+  #includedContent .Abilities-weapon__title,
+  #includedContent2 .Abilities-weapon__title,
+  #includedContent3 .Abilities-weapon__title,
+  #includedContent4 .Abilities-weapon__title {
+    font-size: 30px;
+  }
+
+  #includedContent .Abilities-weapon__box,
+  #includedContent2 .Abilities-weapon__box,
+  #includedContent3 .Abilities-weapon__box,
+  #includedContent4 .Abilities-weapon__box {
+    width: 100%;
+  }
+
+  #includedContent .Abilities-weapon__skill,
+  #includedContent2 .Abilities-weapon__skill,
+  #includedContent3 .Abilities-weapon__skill,
+  #includedContent4 .Abilities-weapon__skill {
+    margin-bottom: 15px;
+  }
+
+  #includedContent .Abilities-weapon__subtitle,
+  #includedContent2 .Abilities-weapon__subtitle,
+  #includedContent3 .Abilities-weapon__subtitle,
+  #includedContent4 .Abilities-weapon__subtitle {
+    font-size: 15px;
+  }
+
+  #includedContent .Abilities-weapon__stat,
+  #includedContent2 .Abilities-weapon__stat,
+  #includedContent3 .Abilities-weapon__stat,
+  #includedContent4 .Abilities-weapon__stat {
+    font-size: 14px;
+  }
+
+  #includedContent .Abilities-weapon .skill-active,
+  #includedContent2 .Abilities-weapon .skill-active,
+  #includedContent3 .Abilities-weapon .skill-active,
+  #includedContent4 .Abilities-weapon .skill-active {
+    height: 50px;
+    width: 50px;
+  }
+
+  #includedContent .Abilities-weapon .skill-active img,
+  #includedContent2 .Abilities-weapon .skill-active img,
+  #includedContent3 .Abilities-weapon .skill-active img,
+  #includedContent4 .Abilities-weapon .skill-active img {
+    height: 50px;
+    width: 50px;
+  }
+
+  #includedContent .Abilities-weapon .main-img,
+  #includedContent2 .Abilities-weapon .main-img,
+  #includedContent3 .Abilities-weapon .main-img,
+  #includedContent4 .Abilities-weapon .main-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  #includedContent .Abilities-weapon__img,
+  #includedContent2 .Abilities-weapon__img,
+  #includedContent3 .Abilities-weapon__img,
+  #includedContent4 .Abilities-weapon__img {
+    height: 35px;
+    width: 35px;
+  }
+
+  #includedContent .Abilities-weapon__img-wrapper,
+  #includedContent2 .Abilities-weapon__img-wrapper,
+  #includedContent3 .Abilities-weapon__img-wrapper,
+  #includedContent4 .Abilities-weapon__img-wrapper {
+    height: 35px;
+    width: 35px;
+  }
+
+  #includedContent .Abilities-weapon .Abilities-weapon__descr,
+  #includedContent2 .Abilities-weapon .Abilities-weapon__descr,
+  #includedContent3 .Abilities-weapon .Abilities-weapon__descr,
+  #includedContent4 .Abilities-weapon .Abilities-weapon__descr {
+    min-width: 250px;
+    padding: 5px;
+  }
+
+  .Abilities-weapon__descr {
+    min-width: 250px;
+    padding: 5px;
+  }
+
+  .Abilities__link {
+    height: 160px;
+    width: 160px;
+  }
+
+  .eror__title {
+    font-size: 30px;
+  }
+
+  .TableDataFurnitur__link {
+    font-size: 15px;
+  }
+
+  .TableDataFurnitur__link:nth-child(4) {
+    display: none;
+  }
+
+  .TableDataFurnitur__stat {
+    font-size: 15px;
+  }
+
+  .TableDataFurnitur__stat:nth-child(5) {
+    display: none;
+  }
+
+  .TableDataPerks__link:last-child {
+    display: none;
+  }
+
+  .TableDataPerks__stat:last-child {
+    display: none;
+  }
+
+  .Craft__box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Craft__link {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  #includedContent .Abilities-weapon__calc,
+  #includedContent2 .Abilities-weapon__calc,
+  #includedContent3 .Abilities-weapon__calc,
+  #includedContent4 .Abilities-weapon__calc {
+    flex-direction: column;
+  }
+
+  #includedContent .Abilities-weapon__calc .Abilities-weapon__back,
+  #includedContent .Abilities-weapon__calc .Abilities-weapon__drop,
+  #includedContent2 .Abilities-weapon__calc .Abilities-weapon__back,
+  #includedContent2 .Abilities-weapon__calc .Abilities-weapon__drop,
+  #includedContent3 .Abilities-weapon__calc .Abilities-weapon__back,
+  #includedContent3 .Abilities-weapon__calc .Abilities-weapon__drop,
+  #includedContent4 .Abilities-weapon__calc .Abilities-weapon__back,
+  #includedContent4 .Abilities-weapon__calc .Abilities-weapon__drop {
+    margin-bottom: 10px;
+  }
+
+  .text-redact__panel {
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .text-redact__panel1:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .text-redact .__select__title {
+    font-size: 14px;
+  }
+
+  .text-redact .__select__label {
+    font-size: 14px;
+  }
+
+  .form-descr__check-text {
+    font-size: 14px;
+  }
+
+  .build-list__column:nth-child(2) {
+    display: none;
+  }
+
+  .build-list__item:nth-child(2) {
+    display: none;
+  }
+
+  .build-list__home-build-link {
+    font-size: 14px;
+  }
+
+  .popup__title {
+    font-size: 18px;
+  }
+
+  .popup__text {
+    font-size: 15px;
+  }
+
+  .popup__placeholder {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    height: 80px;
+    transition: height 0.4s linear;
+  }
+
+  .header__inner {
+    padding-bottom: 10px;
+  }
+
+  .nav {
+    align-items: flex-start;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .nav__logo-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav__burger {
+    display: block;
+  }
+
+  .nav__wrapper {
+    margin-top: 10px;
+  }
+
+  .nav__wrapper .nav__link:first-child {
+    pointer-events: none;
+  }
+
+  .nav__wrapper:hover .database-box {
+    height: 530px;
+  }
+
+  .nav__wrapper,
+  .nav__link {
+    display: none;
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: all 0.4s linear;
+    margin-bottom: 7px;
+    width: 100%;
+    background-color: #1b242c;
+  }
+
+  .nav .active__block {
+    display: block;
+  }
+
+  .nav .database-box {
+    transition: height 0.6s linear;
+    display: flex;
+    height: 0;
+    position: static;
+    left: 52px;
+    top: 28px;
+  }
+
+  .nav .database-box::before {
+    display: none;
+  }
+
+  .nav .database-box .wrapper {
+    align-items: center;
+  }
+
+  .nav .database-box::before {
+    left: 57px;
+    width: 130px;
+    top: -40px;
+    height: 40px;
+  }
+
+  .database__adress form {
+    padding: 6px;
+  }
+
+  .active-nav {
+    height: 160px;
+  }
+
+  .active-nav .nav__wrapper,
+  .active-nav .nav__link {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  .TableDataCreatures__box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .TableDataCreatures__box::after {
+    height: 40px;
+  }
+
+  .TableDataCreatures__title {
+    font-size: 25px;
+  }
+
+  .TableDataCreatures__name {
+    font-size: 17px;
+  }
+
+  .TableDataCreatures__subtitle {
+    font-size: 14px;
+  }
+
+  .TableDataCreatures__img {
+    width: 250px;
+  }
+
+  .TableDataCreatures__descr {
+    width: 100%;
+  }
+
+  .TableDataCreatures__stat:nth-child(2) {
+    margin: 0;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .footer {
+    height: 100px;
+  }
+
+  .footer__img {
+    margin-right: 6px;
+  }
+
+  .Abilities-weapon__title {
+    font-size: 25px;
+  }
+
+  .Abilities-weapon__trees-wrapper {
+    margin: 0 0 40px;
+  }
+
+  .Abilities-weapon__descr {
+    min-width: 210px;
+    padding: 5px;
+  }
+
+  .Abilities-weapon .stick-right::before {
+    left: -23%;
+    width: calc(100vw / 6.75);
+    top: -146%;
+  }
+
+  .Abilities-weapon__item:last-child .Abilities-weapon__row:last-child .Abilities-weapon__descr {
+    left: auto;
+    right: 10%;
+    transform: translateX(0);
+    top: 120%;
+  }
+
+  .Abilities-weapon__item:first-child .Abilities-weapon__row:first-child .Abilities-weapon__descr {
+    left: 21%;
+    transform: translateX(0);
+    top: 120%;
+  }
+
+  .Abilities-weapon__item:last-child .Abilities-weapon__row:first-child .Abilities-weapon__descr {
+    left: 21%;
+    transform: translateX(0);
+    top: 120%;
+  }
+
+  .Abilities-weapon__item:first-child .Abilities-weapon__row:last-child .Abilities-weapon__descr {
+    left: auto;
+    right: 10%;
+    transform: translateX(0);
+    top: 120%;
+  }
+
+  #includedContent .Abilities-weapon__title,
+  #includedContent2 .Abilities-weapon__title,
+  #includedContent3 .Abilities-weapon__title,
+  #includedContent4 .Abilities-weapon__title {
+    font-size: 25px;
+  }
+
+  #includedContent .Abilities-weapon .Abilities-weapon__descr,
+  #includedContent2 .Abilities-weapon .Abilities-weapon__descr,
+  #includedContent3 .Abilities-weapon .Abilities-weapon__descr,
+  #includedContent4 .Abilities-weapon .Abilities-weapon__descr {
+    min-width: 180px;
+  }
+
+  #includedContent .Abilities-weapon .Abilities-weapon__img-wrapper.main-img .Abilities-weapon__descr,
+  #includedContent2 .Abilities-weapon .Abilities-weapon__img-wrapper.main-img .Abilities-weapon__descr,
+  #includedContent3 .Abilities-weapon .Abilities-weapon__img-wrapper.main-img .Abilities-weapon__descr,
+  #includedContent4 .Abilities-weapon .Abilities-weapon__img-wrapper.main-img .Abilities-weapon__descr {
+    top: -175px;
+  }
+
+  .Abilities__title {
+    font-size: 25px;
+  }
+
+  .Abilities__row {
+    flex: 100%;
+    width: 100%;
+  }
+
+  .item-inherit__link {
+    padding: 3px;
+  }
+
+  .item-inherit__perk-descr {
+    font-size: 13px;
+  }
+
+  .item-inherit__perks-img {
+    min-height: 30px;
+  }
+
+  .item-inherit__wrapper {
+    width: 90%;
+  }
+
+  .item-inherit_hed {
+    font-size: 22px;
+  }
+
+  .item-inherit__stat {
+    padding: 5px;
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .item-inherit__list-item {
+    font-size: 13px;
+  }
+
+  .item-inherit__list-name {
+    flex: 50%;
+  }
+
+  .table__item {
+    font-size: 14px;
+  }
+
+  .table__tows {
+    font-size: 15px;
+  }
+
+  .table__link:nth-child(4) {
+    display: none;
+  }
+
+  .table__stat:nth-child(5) {
+    display: none;
+  }
+
+  .TableDataFurnitur__item {
+    font-size: 14px;
+  }
+
+  .TableDataFurnitur__tows {
+    font-size: 15px;
+  }
+
+  .TableDataFurnitur__link:nth-child(3) {
+    display: none;
+  }
+
+  .TableDataFurnitur__stat:nth-child(4) {
+    display: none;
+  }
+
+  .TableDataPerks__item {
+    font-size: 14px;
+  }
+
+  .TableDataPerks__link {
+    font-size: 15px;
+  }
+
+  .Tablecraft__rows {
+    padding: 15px 7px;
+  }
+
+  .Tablecraft__stat {
+    word-break: break-word;
+  }
+
+  .Tablecraft__item {
+    font-size: 14px;
+  }
+
+  .Tablecraft__link {
+    font-size: 14px;
+  }
+
+  .build-list__column {
+    font-size: 13px;
+  }
+
+  .build-list__item {
+    font-size: 13px;
+  }
+
+  .build-list .form-descr__list {
+    flex: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .build-list .__select__label {
+    height: 25px;
+  }
+
+  .popup__content {
+    padding: 7px;
+  }
+
+  .popup__item-wrapper {
+    padding: 30px 10px 10px;
+  }
+
+  .popup__placeholder {
+    font-size: 13px;
+  }
+}

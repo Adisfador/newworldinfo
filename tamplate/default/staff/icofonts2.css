@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icofonts2/fonts/icomoon.eot?al5tk5');
+  src:  url('../icofonts2/fonts/icomoon.eot?al5tk5#iefix') format('embedded-opentype'),
+    url('../icofonts2/fonts/icomoon.ttf?al5tk5') format('truetype'),
+    url('../icofonts2/fonts/icomoon.woff?al5tk5') format('woff'),
+    url('../icofonts2/fonts/icomoon.svg?al5tk5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-move-up:before {
+  content: "\ea46";
+}
+.icon-move-down:before {
+  content: "\ea47";
+}
+.icon-sort-alpha-asc:before {
+  content: "\ea48";
+}
+.icon-sort-numberic-desc:before {
+  content: "\ea4b";
+}
+.icon-font-size:before {
+  content: "\ea61";
+}
+.icon-underline:before {
+  content: "\ea63";
+}
+.icon-text-color:before {
+  content: "\ea6d";
+}
+.icon-paragraph-left:before {
+  content: "\ea77";
+}
+.icon-paragraph-center:before {
+  content: "\ea78";
+}
+.icon-paragraph-right:before {
+  content: "\ea79";
+}

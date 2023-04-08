@@ -1,0 +1,105 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+#  7
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteCond %{QUERY_STRING} ^&AdressMain=(.*)&news_title=(.*)$ 
+RewriteCond %{QUERY_STRING} !htaccess=Y
+RewriteRule ^(.*)$ /mainVII/%1/%2? [R=301,L]
+
+#   6
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteCond %{QUERY_STRING} ^&AdressMain=(.*)&DataType=(.*)&Object=(.*)&TableType=(.*)/?$ 
+RewriteCond %{QUERY_STRING} !htaccess=Y
+RewriteRule ^(.*)$ /mainVI/%1/%2/%3/%4? [R=301,L]
+#   5
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteCond %{QUERY_STRING} ^&AdressMain=(.*)&calc_weapon=(.*)&calc_random=(.*)$ 
+RewriteCond %{QUERY_STRING} !htaccess=Y
+RewriteRule ^(.*)$ /mainV/%1/%2/%3? [R=301,L]
+
+#   4
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteCond %{QUERY_STRING} ^&AdressMain=(.*)&DataType=(.*)&WeaponAb=(.*)$ 
+RewriteCond %{QUERY_STRING} !htaccess=Y
+RewriteRule ^(.*)$ /mainIV/%1/%2/%3? [R=301,L]
+
+
+#  3
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteCond %{QUERY_STRING} ^&AdressMain=(.*)&DataType=(.*)&page=(.*)$ 
+RewriteCond %{QUERY_STRING} !htaccess=Y
+RewriteRule ^(.*)$ /mainIII/%1/%2/%3? [R=301,L]
+
+#   2
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteCond %{QUERY_STRING} ^&AdressMain=(.*)&DataType=(.*)$ 
+RewriteCond %{QUERY_STRING} !htaccess=Y
+RewriteRule ^(.*)$ /mainII/%1/%2? [R=301,L]
+
+#   1
+RewriteCond %{REQUEST_URI} ^/index.php$
+RewriteCond %{QUERY_STRING} ^&AdressMain=(.*)$ 
+RewriteCond %{QUERY_STRING} !htaccess=Y
+RewriteRule ^(.*)$ /mainI/%1? [R=301,L]
+
+
+
+
+
+
+
+#   6 AdressMain/DataType/Object/TableType
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^mainVI/(.*)/(.*)/(.*)/(.*)/?$ index.php?&AdressMain=$1&DataType=$2&Object=$3&TableType=$4&htaccess=Y [L,QSA]
+
+
+#    5 AdressMain/calc_weapon/calc_random
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^mainV/(.*)/(.*)/(.*)/?$ index.php?&AdressMain=$1&calc_weapon=$2&calc_random=$3&htaccess=Y [L,QSA] 
+
+#   3 AdressMain/DataType/page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+RewriteRule ^mainIII/(.*)/(.*)/(.*)/?$ index.php?&AdressMain=$1&DataType=$2&page=$3&htaccess=Y [L,QSA] 
+
+#   7 AdressMain/DataType/page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^mainVII/(.*)/(.*)?$ index.php?&AdressMain=$1&news_title=$2&htaccess=Y [L,QSA] 
+
+
+# 4 AdressMain/DataType/WeaponAb
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^mainIV/(.*)/(.*)/(.*)/?$ index.php?&AdressMain=$1&DataType=$2&WeaponAb=$3&htaccess=Y [L,QSA] 
+
+ 
+
+#   2 AdressMain/DataType
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^mainII/(.*)/(.*)?$ index.php?&AdressMain=$1&DataType=$2&htaccess=Y [L,QSA] 
+
+
+
+#   1 AdressMain
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^mainI/(.*)/?$ index.php?&AdressMain=$1&htaccess=Y [L,QSA] 
+
+
+
+ErrorDocument 404 /mainVI/DataBase/Objectpage/error/ammo
+
+
+</IfModule>
+
+
+
+
